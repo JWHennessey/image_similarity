@@ -14,7 +14,7 @@ def imageSSD(file1, file2):
         return "Images Not Same Size!"
     else:
         x, y, z = img1.shape
-        return int(round(math.sqrt(np.sum((img1[:,:,0:3]-img2[:,:,0:3])**2) / (x * y * 3))));
+        return math.sqrt(np.sum((img1[:,:,0:3]-img2[:,:,0:3])**2) / (x * y * 3));
 
 
 print "SSD (v1s1, v2s1) " + str(imageSSD("images/v1s1.png", "images/v2s1.png"))

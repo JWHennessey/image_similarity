@@ -23,6 +23,4 @@ print "SSD (v1s3, v2s3)  " + str(imageSSD("images/v1s3.png", "images/v2s3.png"))
 
 print "SSD (v1s2, v2s3)  " + str(imageSSD("images/v1s2.png", "images/v2s3.png"))
 print "SSD (v1s3, v2s2)  " + str(imageSSD("images/v1s3.png", "images/v2s2.png"))
-
-
-
+print "SSD (v1s3, large)  " + str(imageSSD("images/v1s3.png", "images/large.png"))
